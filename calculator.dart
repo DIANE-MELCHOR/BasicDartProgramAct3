@@ -1,6 +1,6 @@
 import 'dart:io';
 
-/// SimpleCalculator class with basic arithmetic methods
+/// simpleCalculator na may basic arithmetic methods
 class SimpleCalculator {
   double addNumbers(double x, double y) => x + y;
   double subtractNumbers(double x, double y) => x - y;
@@ -15,13 +15,13 @@ class SimpleCalculator {
 
 void main() {
   var calculator = SimpleCalculator();
-
+// syempre mag eenter ka muna ng first number
   stdout.write('Please enter the first number: ');
   double firstNum = double.parse(stdin.readLineSync()!);
-
+//then mag eenter ka na ng operator mo
   stdout.write('Please enter an operator (+, -, *, /): ');
   String? operator = stdin.readLineSync();
-
+//and last mag eenter ka ng second number
   stdout.write('Please enter the second number: ');
   double secondNum = double.parse(stdin.readLineSync()!);
 
